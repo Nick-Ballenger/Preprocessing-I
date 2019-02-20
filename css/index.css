@@ -131,6 +131,7 @@ table {
   box-sizing: border-box;
   font-size: 62.5%;
   /* 10px base */
+  font-family: Arial, "sans-serif";
 }
 html,
 body {
@@ -140,6 +141,9 @@ body {
   max-width: 1024px;
   margin: 0 auto;
   font-size: 1.6rem;
+  background-image: url(https://www.xmple.com/wallpaper/linear-gradient-green-blue-3840x2160-c2-00ff7f-00008b-a-195-f-14.svg);
+  background-repeat: repeat;
+  background-size: auto;
 }
 header {
   border: 2px solid black;
@@ -149,7 +153,8 @@ header {
   justify-content: flex-end;
   justify-content: space-between;
   margin-bottom: 2rem;
-  background: #7bbef9;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
 header nav {
   display: flex;
@@ -164,4 +169,20 @@ header nav h1 {
 header nav a {
   text-decoration: none;
   color: black;
+}
+.main {
+  display: flex;
+  background: #a5b3c0;
+  align-items: center;
+  border: 2px solid black;
+}
+.main .top {
+  align-items: center;
+  width: 45%;
+  margin: 20,0;
+  padding: 2rem;
+}
+.main .top p {
+  margin-left: 14rem;
+  font-size: 3rem;
 }
