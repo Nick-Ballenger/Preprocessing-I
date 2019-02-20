@@ -200,10 +200,26 @@ header nav a {
 .big2 .second {
   display: flex;
 }
-.big2 .top {
+.big2 .right {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
   width: 40%;
   margin: 20,0;
   padding: 2rem;
+}
+.big2 .top {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 40%;
+  margin: 20,0;
+  padding: 2rem;
+}
+.big2 .top h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
