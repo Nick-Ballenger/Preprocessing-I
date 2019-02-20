@@ -182,7 +182,6 @@ header nav a {
   display: flex;
   background: #a5b3c0;
   align-items: center;
-  margin-bottom-: 20px;
 }
 .big .main .top {
   align-items: center;
@@ -195,18 +194,16 @@ header nav a {
   margin-left: 14rem;
   font-size: 3rem;
 }
-.big .second {
+.big2 {
   background: #a5b3c0;
-  text-shadow: -1px -1px 0 #fcf6f6, 1px -1px 0 #e9e5e5, -1px 1px 0 #f8f3f3, 1px 1px 0 #faefef;
-  padding-left: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.third {
+.big2 .second {
   display: flex;
-  align-items: center;
+}
+.big2 .top {
+  display: flex;
   justify-content: center;
-  margin-top: 20px;
-  background: #a5b3c0;
+  width: 40%;
+  margin: 20,0;
+  padding: 2rem;
 }
