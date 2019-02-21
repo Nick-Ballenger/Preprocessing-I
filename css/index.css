@@ -196,11 +196,13 @@ header nav a {
 }
 .big2 {
   background: #a5b3c0;
+  border: 1px solid black;
 }
 .big2 .second {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .big2 .right {
   width: 49%;
@@ -214,11 +216,12 @@ header nav a {
   margin-left: 3rem;
 }
 .big2 .right ul li {
-  background: gray;
+  background: rgba(69, 184, 140, 0.548);
   margin-left: 3rem;
   text-align: center;
   margin: 10px;
   border: 1px solid black;
+  border-radius: 4px;
 }
 .big2 .right ul li :first-child {
   margin-top: 10rem;
@@ -235,4 +238,33 @@ header nav a {
 .big2 .top h2 {
   font-size: 2rem;
   margin-bottom: 20px;
+}
+.big3 {
+  background: #a5b3c0;
+}
+.big3 .history {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+  margin-top: 20px;
+}
+.big3 .history h2 {
+  font-size: 3rem;
+}
+.big3 .table {
+  width: 100%
+		border:1px solid black;
+}
+.big3 .table table {
+  background: #9d9acd;
+  background: linear-gradient(90deg, #9d9acd 0%, #4b4bb5 33%, #00d4ff 100%);
+  display: flex;
+  justify-content: center;
+}
+.big3 .table th {
+  border: 1px solid black;
+}
+.big3 .table td {
+  border: 1px solid black;
+  background: ;
 }
