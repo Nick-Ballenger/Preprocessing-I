@@ -156,19 +156,33 @@ font-size:3rem;
 	background:@cornflower-blue;
 	.second{
 		display:flex;
+		align-items: center;
+		flex-wrap:wrap;
 
 	} //second
+		
 	.right{
-		display:flex;
-		flex-direction:column;
-		justify-content:center;
-flex-wrap:wrap;
-align-items: center;
-		width:40%;
-margin:20,0;
-padding:2rem;
-
+	 width:49%;
+	 h2{
+		font-size:2rem;
+		margin-bottom:3rem;
+		margin-left:15rem;
 	}
+	ul{
+		margin-left:3rem;
+		li{
+			background:gray;
+			margin-left:3rem;
+			text-align:center;
+			margin:10px;
+			border:1px solid black;
+		}
+		li :first-child{
+			margin-top:10rem;
+		}
+	}
+
+}
 .top{
 display:flex;
 justify-content:center;
