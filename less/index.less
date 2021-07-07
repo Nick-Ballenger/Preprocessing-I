@@ -1,8 +1,22 @@
 // Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
+
+//variable styles
+@cornflower-blue:#a5b3c0;
+@font-stack: Arial, "sans-serif";
+@text-shadow-white:	-1px -1px 0 rgb(252, 246, 246),
+1px -1px 0 rgb(233, 229, 229),
+-1px 1px 0 rgb(248, 243, 243),
+1px 1px 0 rgb(250, 239, 239);
+//mixins
+.center(){
+display:flex;
+align-items:center;
+
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -17,43 +31,297 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+display: block;
+
 }
 body {
-	line-height: 1;
+line-height: 1;
 }
 ol, ul {
-	list-style: none;
+list-style: none;
 }
 blockquote, q {
-	quotes: none;
+quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+content: '';
+content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+border-collapse: collapse;
+border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+box-sizing: border-box;
+font-size: 62.5%; /* 10px base */
+font-family: @font-stack;
 }
 
 html, body {
-    height: 100%;
+height: 100%;
 }
+
+
+.container{
+max-width:1024px;
+margin: 0 auto;
+font-size: 1.6rem;
+background-image: url(http://www.gifimagesdownload.com/wp-content/uploads/2016/02/cool-background-gif-441.gif);
+background-repeat: repeat;
+background-size: auto;
+@media(max-width:515px){
+width:500px;
+margin: 0 auto;
+font-size: 1.6rem;
+}
+}
+
+header{
+border:2px solid black;
+border-radius:7px;
+width:100%;
+display:flex;
+justify-content: flex-end;
+justify-content:space-between;
+margin-bottom:2rem;
+background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+@media(max-width: 515px){
+flex-direction: column;
+align-items: center;
+}
+
+nav{
+display:flex;
+width:100%;
+margin: 20px 0;
+padding: 20px 0;
+justify-content: space-around;
+@media(max-width: 515px){
+flex-direction: column;
+align-items: center;
+margin-top:20px;
+margin-bottom:20px;
+width:90%;
+}
+h1{
+font-size:2rem;
+color:white;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+@media(max-width: 515px){
+flex-direction: column;
+align-items: center;
+margin-bottom:20px;
+}
+@media(max-width: 515px){
+flex-direction: column;
+align-items: center;
+}
+}
+a{
+text-decoration:none;
+color:white;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+@media(max-width: 515px){
+flex-direction: column;
+align-items: center;
+margin-bottom:20px;
+}
+
+}
+}//nav	
+}//header
+.big{
+border:2px solid black;
+border-radius:7px;
+margin-bottom: 2rem;
+.main{
+display:flex;
+background:@cornflower-blue;
+align-items:center;
+justify-content: space-between;
+h2{
+	margin-left:6rem;
+	font-size: 3rem;
+}
+@media(max-width: 515px){
+
+display:flex;
+justify-content: space-around;
+padding-right:6rem;
+
+}
+.top1{
+justify-content: center;
+align-items:center;
+width:45%;
+margin:20,0;
+padding:2rem;
+@media(max-width: 515px){
+	
+	display:flex;
+	justify-content: center;
+}
+h2{
+	@media(max-width: 515px){
+		
+		
+		
+}
+
+
+}
+}
+.top{
+
+align-items:center;
+width:45%;
+margin:20,0;
+padding:2rem;
+@media(max-width: 515px){
+display:flex;
+justify-content: center;
+width:45%;
+
+img{
+display:none;
+}
+}
+
+h2{
+
+text-shadow:@text-shadow-white;
+
+margin-left:14rem;
+font-size:3rem;
+}//h2
+}//top
+}//main
+
+
+}//big
+
+.big2{
+background:@cornflower-blue;
+border:1px solid black;
+@media(max-width:515px){
+
+display:flex;	
+flex-direction:column;
+}
+.second{
+
+
+display:flex;
+align-items: center;
+flex-wrap:wrap;
+justify-content:center;
+
+@media(max-width:515px){
+	display:flex;	
+	flex-direction:column;
+	align-items: center;
+
+}
+} //second
+
+.right{
+width:49%;
+h2{
+font-size:2rem;
+margin-bottom:3rem;
+margin-left:15rem;
+@media(max-width: 515px){
+	margin:0;
+	margin-left:7rem;
+}
+
+
+}
+ul{
+margin-left:3rem;
+li{
+	background:rgba(69, 184, 140, 0.548);
+	margin-left:3rem;
+	text-align:center;
+	margin:10px;
+	border:1px solid black;
+	border-radius: 4px;
+}
+li :first-child{
+	margin-top:10rem;
+}
+}
+
+}
+.top{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+align-items: center;
+width:40%;
+margin:20,0;
+padding:2rem;
+
+h2{
+font-size:2rem;
+margin-bottom:20px;
+}
+} //top
+} //big2
+
+.big3{
+background:@cornflower-blue;
+.history{
+display:flex;
+justify-content: center;
+margin-bottom:4rem;
+margin-top:20px;
+h2{
+	font-size:3rem;
+}
+}
+.table{
+width:100%;
+border:1px solid black;
+margin-bottom:20px;
+table{
+	background: rgb(157,154,205);
+	background: linear-gradient(90deg, rgba(157,154,205,1) 0%, rgba(75,75,181,1) 33%, rgba(0,212,255,1) 100%);
+	display:flex;
+	justify-content: center;
+}
+th{
+	
+	border:1px solid black;
+}
+td{
+border:1px solid black;
+background: ;
+}
+}
+}
+
+
 
